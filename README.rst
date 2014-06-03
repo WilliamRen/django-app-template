@@ -15,6 +15,10 @@ In your virtualenv, in another location (eg. ``sources`` directory), enter the f
 
   django-admin.py startapp --template=<django-app-template-directory> awesome-app
 
+If you are very very lazy, you can directly use this repository zip file as template::
+
+  django-admin.py startapp --template=https://github.com/olivier-m/django-app-template/archive/master.zip awesome-app
+
 Install your new app
 ====================
 
@@ -34,5 +38,6 @@ Your template based app should immediately work but you can adapt the following 
 - ``setup.py``: Add author, website, license, etc.
 - ``<app>/version.py``: Your app version number
 - ``MANIFEST.in``: Remove or change include directives
+- **This file** :)
 
 In this case you can run ``pip install -e`` again.
