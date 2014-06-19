@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import (print_function, division, absolute_import, unicode_literals)
-
 from setuptools import setup, find_packages
 
 # Get app version
