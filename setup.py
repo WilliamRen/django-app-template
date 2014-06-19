@@ -9,8 +9,9 @@ with open('{{ app_name }}/version.py', 'rb') as fp:
     exec(fp.read(), g)
     version = g['__version__']
 
-# Get package list and make app name mapping
-packages = find_packages(exclude=['*.tests'])
+# Get package list
+packages = find_packages(exclude=['*.tests', '*.tests.*', 'tests.*', 'tests'])
+
 
 # Read README file
 def readme():
